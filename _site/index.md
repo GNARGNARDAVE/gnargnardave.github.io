@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1>Material Grid</h1>
+<h1>Material Grids</h1>
 <div class="default">
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--1-col">1</div>
