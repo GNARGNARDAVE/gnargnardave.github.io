@@ -4,8 +4,8 @@ title: Shred The Gnar Gnar
 email: dave@shredthegnargnar.com
 description: TEST
 
-source: ./docs
-destination: ./dist
+source: ./docs/
+destination: ./dist/
 
 #timezone: America/New_York
 baseurl: "" 
