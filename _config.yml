@@ -5,7 +5,7 @@ email: dave@shredthegnargnar.com
 description: TEST
 
 source: ./_site/
-destination: ./_output/
+destination: ./dist/
 
 #timezone: America/New_York
 baseurl: "" 
