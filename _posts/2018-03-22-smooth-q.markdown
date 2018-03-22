@@ -1,0 +1,35 @@
+---
+title:  "Smooth Q on Snow"
+date:   2018-03-21 22:41:08 -0400
+author: "DT"
+img: http://img.youtube.com/vi/ar55g6ekhnI/0.jpg
+categories: snow
+---
+
+With all the gimbals out there - I invested in a Kickstarter for the
+Steadicam Volt. What I failed to realize was how it worked - it wasn't
+good for something like snowboarding, only for following around folks on foot.
+
+So I started looking at gimbals, and found this one on Amazon for $99.
+
+There are not a lot of videos snowboarding with the [Zhiyun Smooth Q](https://amzn.to/2pDRr1k){:target="_blank"}. I used this
+with the Google Pixel 2. The one I bought came with a GoPro adapter (I have
+the [GoPro 3](https://amzn.to/2DU3pbA):{target="_blank"}) but
+the issue was that it doesn't support the waterproof case.  The Google Pixel 2
+is waterproof so I went with that instead.
+
+It was great - other than the times it got knocked loose by accident and
+I had to turn it off and on again.  It connected to the app pretty good,
+so it was nice to utilize the  button on the handle to record.
+
+It handled pretty well I felt, I have to get used to the different
+settings to take advantage of it. I didn't quite read the instructions,
+and so there were times when I wanted to point it up or down, but i kept
+the camera level.
+
+More reviews to come later with it.  Towards the end we were about five
+beers deep so please excuse the falling down and being stupid part.
+
+<iframe width="1236" height="662" src="https://www.youtube.com/embed/ar55g6ekhnI"
+ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+

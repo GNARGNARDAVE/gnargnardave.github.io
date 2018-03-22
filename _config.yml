@@ -1,0 +1,36 @@
+
+# Site settings
+title: Shred The Gnar Gnar
+email: dave@shredthegnargnar.com
+description: TEST
+
+source: ./
+destination: ./dist
+
+#timezone: America/New_York
+baseurl: "" 
+url: "https://gnargnardave.github.io" # the base hostname & protocol for your site
+
+twitter_username: GNARGNAR_DAVE
+github_username:  gnargnardave
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+sass:
+    sass_dir: ./_sass
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: _posts
+    values:
+      layout: article

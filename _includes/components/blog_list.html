@@ -1,0 +1,49 @@
+{% assign blogs = site.posts %}
+
+<div class="blog-cpt">
+	{% for items in blogs %}
+
+	{% assign index = forloop.index | modulo: 3 %}
+
+	{%  if index == 0 %}
+	<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
+	{% endif %}
+
+	{%  if index != 0 %}
+		{% if index == 1%}
+			<div class="mdl-grid">
+		{% endif %}
+				<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+	{% endif %}
+
+				<div class="mdl-card mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
+					<div class="blog-card-wide mdl-card mdl-shadow--2dp" onclick="javascript:window.href={{items.url}}">
+						<div class="mdl-card__title"
+						     style="background-image: url({{ items.img }});">
+							<h2 class="mdl-card__title-text">{{items.title}}</h2>
+							<!--<div>{{ items.date | date:"%-m.%d.%Y" }}</div>-->
+						</div>
+						<div class="mdl-card__supporting-text">
+							{{ items.content | strip_html | truncatewords: 8}}
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+								href="{{items.url}}">
+								Read
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+		{% if index == 2 or index == 0%}
+			</div>
+		{%  endif %}
+	</div>
+	{% endfor %}
+</div>
