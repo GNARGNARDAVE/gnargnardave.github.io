@@ -3,7 +3,7 @@ layout: default
 title: HOME
 ---
 
-# MY INDEX
+# Hi Todd
 ![alt text](https://scontent.fphl2-1.fna.fbcdn.net/v/t1.0-9/28576670_10155371965902544_9201992672083959850_n.jpg?oh=f12ad52b58f45eea20271c2b2582d182&oe=5B73A64A "GIMME YOUR MONEY")
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, enim eget consequat luctus, justo massa faucibus eros, blandit fermentum est nisi in nisi. Aliquam vehicula vel dolor id porttitor. Sed sed ante vel eros viverra bibendum in sed sapien. Integer ultricies sapien in massa lacinia, et ornare arcu dignissim. In hac habitasse platea dictumst. Fusce semper ligula eu neque ornare, sodales varius sem finibus. Fusce dignissim orci nec sagittis elementum.
