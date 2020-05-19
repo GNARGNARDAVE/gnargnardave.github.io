@@ -1,0 +1,30 @@
+
+
+// TRANSITIONS
+@mixin trans-delay($delay) {
+    -webkit-transition: all .3s ease-in $delay;
+    -moz-transition: all .3s ease-in $delay;
+    -o-transition: all .3s ease-in $delay;
+    transition: all .3s ease-in $delay;
+}
+
+@mixin trans-ease($time) {
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease;
+}
+
+@mixin ani-ease($time) {
+    -webkit-animation: all $time ease;
+    -moz-animation: all $time ease;
+    -o-animation: all $time ease;
+    animation: all $time ease;
+}
+
+@mixin opacity($level){
+    filter: alpha(opacity=$level*100);
+    -moz-opacity: $level;
+    -khtml-opacity: $level;
+    opacity: $level;
+}

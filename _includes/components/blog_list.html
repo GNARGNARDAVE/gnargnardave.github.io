@@ -1,22 +1,11 @@
 {% assign blogs = site.posts %}
 
 <div class="blog-cpt list">
+	<div class="mdl-grid">
 	{% for items in blogs %}
 
 	{% assign index = forloop.index | modulo: 4 %}
-
-	{%  if index == 0 %}
-	<div class="mdl-grid">
-		<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--12-col-desktop">
-	{% endif %}
-
-	{%  if index != 0 %}
-		{% if index == 1 %}
-	<div class="mdl-grid">
-		{% endif %}
 		<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--4-col-tablet mdl-cell--4-col-desktop">
-	{% endif %}
-			
 				<div class="mdl-card mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
 					<div class="blog-card-wide mdl-card mdl-shadow--2dp"
 					     onclick="javascript:window.location.href='{{items.url}}'">
@@ -31,23 +20,9 @@
 							<br/>
 							<div class="date">{{ items.date | date:"%-m.%d.%Y" }}</div>
 						</div>
-						<!--<div class="mdl-card__actions mdl-card--border">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-								href="{{items.url}}">
-								Read
-							</a>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>!-->
 					</div>
 				</div>
-
-		{% if index == 3 or index == 0%}
 			</div>
-		{%  endif %}
-	</div>
 	{% endfor %}
+	</div>
 </div>
