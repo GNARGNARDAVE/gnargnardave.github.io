@@ -1,7 +1,7 @@
 ---
 title:  "Soy Garlic Flank Steak Stir-Fry"
 date:   2020-02-10 22:42:08 -0400
-author: "Dave Tran"
+author: "DT"
 img: /img/recipe/IMG_20191116_181532.jpg
 categories: recipes
 ---
