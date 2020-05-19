@@ -1,12 +1,12 @@
 ---
-title:  "Chipmunk Challenge at Deep Creek"
+title:  "Chipmunk Challenge"
 date:   2017-10-17 22:41:08 -0400
 author: "DT"
 img: http://img.youtube.com/vi/y_hBWZW5gjk/0.jpg
 categories: dad
 ---
 
-Weekend vacation to Deep Creek/McHenry, MD - the kids were looking forward
+On a weekend vacation to Deep Creek, the kids were looking forward
 to the Mountain Coaster and the Chipmunk Challenge.  The cousins had a
 good time with the High Five pass and a couple Mountain Coaster Double passes.
 

@@ -9,9 +9,22 @@
 
 	.blog-card-wide.mdl-card {
 		margin-left: 1px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		width: 99%;
 		cursor: pointer;
+
+		&:hover {
+			.mdl-card__title {
+				opacity: 40%;
+			}
+
+			a.mdl-card__title-text {
+				color: skyblue;
+			}
+
+
+		}
+
 		.mdl-card__supporting-text > p {
 			margin: 0;
 		}
@@ -19,22 +32,46 @@
 
 	.blog-card-wide > .mdl-card__title {
 		color: #fff;
-		height: 176px;
+		height: 120px;
 		background: url('../assets/demos/welcome_card.jpg') center / cover;
+		position: relative;
 
 		.floating-logo {
-			position: relative;
+			position: absolute;
 			right: 5px;
 			bottom: 5px;
-
-			img {
-				width: 50px !important;
-			}
+			width: 50px !important;
 		}
 	}
+
+	.mdl-card__supporting-text {
+		a.mdl-card__title-text {
+			font-size: 1.2em;
+			line-height:.9em;
+			font-weight: 700 !important;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:hover {
+				color: skyblue;
+			}
+		}
+
+		p {
+			line-height: 1em;
+			margin-top: 5px !important;
+		}
+	}
+
+
 
 	.blog-card-wide > .mdl-card__menu {
 		color: #fff;
 	}
 
+}
+
+.blog-cpt.list {
+	.blog-card-wide.mdl-card {
+		margin-bottom: 5px !important;
+	}
 }
