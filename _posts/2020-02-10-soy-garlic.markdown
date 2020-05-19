@@ -1,12 +1,12 @@
 ---
-title:  "Soy Garlic Flank Steak Stir-Fry"
+title:  "Soy Garlic Flank Stir Fry"
 date:   2020-02-10 22:42:08 -0400
 author: "DT"
 img: /img/recipe/IMG_20191116_181532.jpg
 categories: recipes
 ---
 
-As a dad, you may to cook some food for the kiddos by yourself sometimes.
+As a dad, you may have to cook some food for the kiddos by yourself sometimes.
 Here's an easy recipe that can be done in less than 20 minutes.
 
 ### Ingredients

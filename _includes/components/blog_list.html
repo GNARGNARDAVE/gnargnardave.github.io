@@ -1,9 +1,9 @@
 {% assign blogs = site.posts %}
 
-<div class="blog-cpt">
+<div class="blog-cpt list">
 	{% for items in blogs %}
 
-	{% assign index = forloop.index | modulo: 3 %}
+	{% assign index = forloop.index | modulo: 4 %}
 
 	{%  if index == 0 %}
 	<div class="mdl-grid">
@@ -11,36 +11,33 @@
 	{% endif %}
 
 	{%  if index != 0 %}
-		{% if index |  module: 3 == 0 %}
+		{% if index == 1 %}
 	<div class="mdl-grid">
 		{% endif %}
 		<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--4-col-tablet mdl-cell--4-col-desktop">
 	{% endif %}
-
-
+			
 				<div class="mdl-card mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
 					<div class="blog-card-wide mdl-card mdl-shadow--2dp"
 					     onclick="javascript:window.location.href='{{items.url}}'">
 						<div class="mdl-card__title"
 						     style="background-image: url({{ items.img }});">
-							<h2 class="mdl-card__title-text">{{items.title}}</h2>
 							<img class="floating-logo"
-							     width="20"
 							     border="0" src="/img/logo.png">
 						</div>
 						<div class="mdl-card__supporting-text">
-							{{ items.content | strip_html | truncatewords: 15}}
+							<a class="mdl-card__title-text" href="{{items.url}}">{{items.title}}</a>
+							<p>{{ items.content | strip_html | truncatewords: 9}}</p>
 							<br/>
-							<div class="author">By {{ items.author }}</div>
 							<div class="date">{{ items.date | date:"%-m.%d.%Y" }}</div>
 						</div>
-						<div class="mdl-card__actions mdl-card--border">
+						<!--<div class="mdl-card__actions mdl-card--border">
 							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
 								href="{{items.url}}">
 								Read
 							</a>
 						</div>
-						<!--<div class="mdl-card__menu">
+						<div class="mdl-card__menu">
 							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 								<i class="material-icons">share</i>
 							</button>
@@ -48,7 +45,7 @@
 					</div>
 				</div>
 
-		{% if index == 2 or index == 0%}
+		{% if index == 3 or index == 0%}
 			</div>
 		{%  endif %}
 	</div>

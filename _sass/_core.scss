@@ -1,6 +1,15 @@
 h1, h2, h3, h4, h5, h6 {
 	font-family: $typekit;
 	text-transform: uppercase;
+	font-weight: 700;
+}
+
+a {
+	font-family: $typekit;
+}
+
+p, div {
+	font-weight: 400;
 }
 
 img {
@@ -13,6 +22,22 @@ img {
 
 .author, .date {
 	display: block;
+}
+
+.mdl-navigation {
+	a {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+.mdl-layout-title.pointer h4 {
+	text-decoration: underline;
+	color: #ddd;
+}
+
+.mdl-navigation__link {
+	font-size: 25px;
 }
 
 /* Rules for sizing the icon. */

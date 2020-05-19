@@ -6,21 +6,23 @@
 
 		<div class="blog-card-wide mdl-card mdl-shadow--2dp">
 			<div class="mdl-card__title"
-			     style="background-image: url({{ items.img }});">
-				<h2 class="mdl-card__title-text">{{items.title}}</h2>
+			     style="background-image: url({{ items.img }});"
+			     onclick="javascript:window.location.href='{{items.url}}'">
+				<img class="floating-logo"
+				     border="0" src="/img/logo.png">
 				<!--<div>{{ items.date | date:"%-m.%d.%Y" }}</div>-->
 			</div>
 			<div class="mdl-card__supporting-text">
-				{{ items.content | strip_html | truncatewords: 10}}
-				<div class="author">By {{ items.author }}</div>
+				<a class="mdl-card__title-text" href="{{items.url}}">{{items.title}}</a>
+				<p>{{ items.content | strip_html | truncatewords: 15}}</p>
 				<div class="date">{{ items.date | date:"%-m.%d.%Y" }}</div>
 			</div>
-			<div class="mdl-card__actions mdl-card--border">
+			<!--<div class="mdl-card__actions mdl-card--border">
 				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
 				   href="{{items.url}}">
 					Read
 				</a>
-			</div>
+			</div>-->
 			<!--<div class="mdl-card__menu">
 				<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 					<i class="material-icons">share</i>
