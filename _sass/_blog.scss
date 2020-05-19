@@ -21,6 +21,12 @@
 		color: #fff;
 		height: 176px;
 		background: url('../assets/demos/welcome_card.jpg') center / cover;
+
+		.floating-logo {
+			position: relative;
+			right: 5px;
+			bottom: 5px;
+		}
 	}
 
 	.blog-card-wide > .mdl-card__menu {
