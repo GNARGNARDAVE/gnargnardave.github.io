@@ -1,15 +1,19 @@
 ---
-title:  "Snowboarding Toddler"
+title:  "Kids in a Star Wars Fight - PEW PEW PEW"
 date:   2017-09-07 22:41:08 -0400
 author: "DT"
-img: http://img.youtube.com/vi/rFh9FUYPUPI/0.jpg
-categories: [dad,snow]
+img: http://img.youtube.com/vi/iz09JUNO6Ho/0.jpg
+categories: dad
 ---
 
-Dougie started snowboarding at just before two years old, but has only
- been twice since then.
+I figured I would try my hand at special effects - made much easier by filters.
 
-<iframe width="1236" height="662" src="https://www.youtube.com/embed/rFh9FUYPUPI"
+<iframe width="1236" height="662" src="https://www.youtube.com/embed/B7Bjx6Bqz0k"
  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-Five Year Old Dougie ziplining across gators.
+First Star Wars fight scene
+
+<iframe width="1236" height="662" src="https://www.youtube.com/embed/iz09JUNO6Ho"
+ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Second Star Wars fight scene
+
 
