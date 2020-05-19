@@ -18,7 +18,8 @@
 	{% endif %}
 
 				<div class="mdl-card mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
-					<div class="blog-card-wide mdl-card mdl-shadow--2dp" onclick="javascript:window.href={{items.url}}">
+					<div class="blog-card-wide mdl-card mdl-shadow--2dp"
+					     onclick="javascript:window.location.href='{{items.url}}'">
 						<div class="mdl-card__title"
 						     style="background-image: url({{ items.img }});">
 							<h2 class="mdl-card__title-text">{{items.title}}</h2>
