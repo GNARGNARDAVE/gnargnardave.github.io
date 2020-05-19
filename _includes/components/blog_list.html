@@ -14,10 +14,10 @@
 		{% if index == 1%}
 	<div class="mdl-grid">
 		{% endif %}
-		<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-cell--6-col-desktop">
+		<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-cell--4-col-desktop">
 	{% endif %}
 
-			
+
 				<div class="mdl-card mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
 					<div class="blog-card-wide mdl-card mdl-shadow--2dp"
 					     onclick="javascript:window.location.href='{{items.url}}'">
@@ -28,6 +28,7 @@
 						<div class="mdl-card__supporting-text">
 							{{ items.content | strip_html | truncatewords: 15}}
 							<br/>
+							<img class="title-logo" border="0" src="/img/logo.png">
 							<div class="author">By {{ items.author }}</div>
 							<div class="date">{{ items.date | date:"%-m.%d.%Y" }}</div>
 						</div>
