@@ -1,5 +1,6 @@
 ---
 layout: default
-title: HOME
+title: ERMAGAWD
 ---
-{% include components/blog_list.html %}
+
+{% include components/home_page.html %}

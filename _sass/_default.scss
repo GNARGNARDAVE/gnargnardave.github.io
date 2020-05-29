@@ -1,7 +1,29 @@
+body {
+	background-color: #8C93A8
+}
+
+.page-title {
+	color: #fff !important;
+
+	&:hover {
+		color: #5C6672 !important;
+	}
+}
+
+.page-content {
+	color:#5C6672;
+}
+
 .default-tpl {
 
 	.mdl-layout__header {
-		background-color: $grey;
+		background-color:#8C93A8;
+		box-shadow: none;
+		height: 80px;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #fff;
+		}
 
 		.mdl-layout-title {
 			h4 {
@@ -20,6 +42,10 @@
 	header {
 		.material-icons {
 			line-height: 2em;
+		}
+
+		.nav-row {
+			padding: 40px 10% 0 10%;
 		}
 	}
 

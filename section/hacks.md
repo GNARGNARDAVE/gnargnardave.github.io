@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: Snow
-permalink: /snow/
-type: snow
+title: hacks
+permalink: /hacks
+type: hacks
 ---
 
 {% include /components/blog.html %}
