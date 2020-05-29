@@ -2,11 +2,15 @@
 .mdl-layout__content {
 
 	.page-content {
-		background-image: url('/img/stsci-h-p1930a-f-3213x2836.jpg'),url('/img/frontier_macsj0717.jpg');
+		background-image: url('/img/stsci-h-p1930a-f-3213x2836.jpg'),url('/img/frontier_macsj0717.jpg'), url('/img/yeti.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		background-blend-mode: multiply;
+
+		p {
+			color: #fff;
+		}
 	}
 }
 
