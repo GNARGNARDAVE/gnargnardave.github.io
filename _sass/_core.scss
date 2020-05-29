@@ -1,3 +1,10 @@
+@import 'mixins';
+
+
+body {
+	color: #5C6672;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: $typekit;
 	text-transform: uppercase;
@@ -5,11 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+	color: #5C6672;
 	font-family: $typekit;
 }
 
 p, div {
 	font-weight: 400;
+	line-height: 1em;
 }
 
 img {
@@ -25,19 +34,29 @@ img {
 }
 
 .mdl-navigation {
-	a {
+	a.mdl-navigation__link {
+		@include trans-ease(.5s);
 		font-weight: 700;
 		text-transform: uppercase;
+		color: #5C6672 !important;
+
+		&:hover, &:active {
+			color: #fff !important;
+		}
+	}
+
+	a:hover {
+		color: #fff !important;
 	}
 }
 
 .mdl-layout-title.pointer h4 {
-	text-decoration: underline;
-	color: #ddd;
+	color: #5C6672;
 }
 
 .mdl-navigation__link {
 	font-size: 25px;
+	color: #3A435E;
 }
 
 .page-buffer {

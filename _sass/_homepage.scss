@@ -1,0 +1,42 @@
+
+.mdl-layout__content {
+
+	.page-content {
+		background-image: url('/img/stsci-h-p1930a-f-3213x2836.jpg'),url('/img/frontier_macsj0717.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-blend-mode: multiply;
+	}
+}
+
+
+.home-page-ctr {
+	min-height: 90vh;
+
+	.home-text-big {
+		position:relative;
+		z-index: 2;
+
+		h1, h2, h3, h4, h5, h6 {
+			@include stroke(1, #fff);
+		}
+
+	}
+
+	.eighty-square {
+		@include poly((32% 0, -14% 154%, 182% 163%, 59% -65%));
+		@include rotate(59deg);
+		@include trans-ease(.75s);
+		background-color: gold;
+		height:305px;
+		position: relative;
+		top: -300px;
+		width: 250px;
+		z-index: 1;
+	}
+}
+
+.mdl-card {
+	background-color: transparent;
+}
