@@ -1,19 +1,20 @@
 
 .mdl-layout__content {
-
 	.page-content {
-		background-image: url('/img/stsci-h-p1930a-f-3213x2836.jpg'),url('/img/frontier_macsj0717.jpg'), url('/img/yeti.jpg');
+		background-image:
+			url('/img/stsci-h-p1930a-f-3213x2836.jpg'),
+			url('/img/frontier_macsj0717.jpg'),
+			url('/img/yeti.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0 0;
 		background-blend-mode: multiply;
 
 		p {
-			color: #fff;
+			color: rgba(255,255,255,.7);
 		}
 	}
 }
-
 
 .home-page-ctr {
 	min-height: 90vh;
@@ -23,8 +24,15 @@
 		z-index: 2;
 
 		h1, h2, h3, h4, h5, h6 {
-			@include stroke(1, #fff);
+			color: rgba(0,0,0,.8);
 		}
+
+		.purple {
+			@include stroke(1, purple);
+		}
+	}
+
+	.mdl-cell {
 
 	}
 
