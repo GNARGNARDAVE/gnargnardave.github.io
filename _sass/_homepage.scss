@@ -11,6 +11,7 @@
 		background-blend-mode: multiply;
 
 		p {
+			font-family: $typekit-hand;
 			color: rgba(255,255,255,.7);
 		}
 	}
@@ -19,50 +20,100 @@
 .home-page-ctr {
 	min-height: 90vh;
 
-	.home-text-big {
-		position:relative;
-		z-index: 2;
+	.mdl-grid {
+		margin-bottom: 40px;
 
-		h1, h2, h3, h4, h5, h6 {
-			color: rgba(0,0,0,.8);
+		.home-text {
+			display: flex;
+			align-content: center !important;
+			align-items: center;
+			justify-content: center;
+
+			.center-content {
+				position:relative;
+				z-index: 2;
+				width: 100%;
+				height: initial;
+
+				@media(min-width: 768px) {
+					width: 100%;
+				}
+
+				@media(min-width: 992px) {
+					width: 80%;
+				}
+
+				@media(min-width: 1200px) {
+					width: 80%;
+				}
+
+				p {
+					padding: 0 20px;
+				}
+			}
+
+			.home-text-big {
+				position:relative;
+				z-index: 2;
+				width: 70%;
+				height: initial;
+
+				&.top {
+					height: 90%;
+					width: 90%;
+				}
+
+				&.right {
+					text-align: right;
+				}
+
+				&.left {
+					text-align: left;
+				}
+				h1, h2, h3, h4, h5, h6 {
+					color: rgba(0,0,0,.8);
+				}
+
+				.purple {
+					@include stroke(1, purple);
+				}
+
+				h1 {
+					font-size: 33px;
+
+					@media(min-width: 768px) {
+						font-size: 40px;
+					}
+
+					@media(min-width: 992px) {
+						font-size: 50px;
+					}
+
+					@media(min-width: 1200px) {
+						font-size: 65px;
+					}
+				}
+			}
 		}
 
-		.purple {
-			@include stroke(1, purple);
+		.mdl-cell {
+
 		}
 
-		h1 {
-			font-size: 33px;
-
-			@media(min-width: 768px) {
-				font-size: 40px;
-			}
-
-			@media(min-width: 992px) {
-				font-size: 50px;
-			}
-
-			@media(min-width: 1200px) {
-				font-size: 65px;
-			}
+		.eighty-square {
+			@include poly((32% 0, -14% 154%, 182% 163%, 59% -65%));
+			@include rotate(59deg);
+			@include trans-ease(.75s);
+			background-color: gold;
+			height:305px;
+			position: relative;
+			top: -300px;
+			width: 250px;
+			z-index: 1;
 		}
 	}
 
-	.mdl-cell {
 
-	}
-
-	.eighty-square {
-		@include poly((32% 0, -14% 154%, 182% 163%, 59% -65%));
-		@include rotate(59deg);
-		@include trans-ease(.75s);
-		background-color: gold;
-		height:305px;
-		position: relative;
-		top: -300px;
-		width: 250px;
-		z-index: 1;
-	}
 }
 
 .mdl-card {
