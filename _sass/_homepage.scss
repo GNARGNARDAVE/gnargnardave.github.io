@@ -26,7 +26,6 @@ body {
 }
 .mdl-layout__content {
 	.page-content {
-
 		p {
 			font-family: $typekit-hand;
 			color: rgba(255,255,255,.7);
@@ -80,7 +79,7 @@ body {
 					width: 90%;
 				}
 
-				&.right {
+				&.center {
 					text-align:center;
 				}
 
