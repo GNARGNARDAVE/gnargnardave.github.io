@@ -1,14 +1,31 @@
 
+
+body {
+	background-image:
+					url('/img/stsci-h-p1930a-f-3213x2836.jpg'),
+					url('/img/frontier_macsj0717.jpg'),
+					url('/img/yeti.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-blend-mode: multiply;
+    @include trans-ease(.5s);
+
+	&.v0 {
+		background-color: transparent;
+	}
+	&.v1 {
+		background-color: greenyellow;
+	}
+	&.v2 {
+		background-color: dodgerblue;
+	}
+	&.v3 {
+		background-color: white;
+	}
+}
 .mdl-layout__content {
 	.page-content {
-		background-image:
-			url('/img/stsci-h-p1930a-f-3213x2836.jpg'),
-			url('/img/frontier_macsj0717.jpg'),
-			url('/img/yeti.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-blend-mode: multiply;
 
 		p {
 			font-family: $typekit-hand;
@@ -61,6 +78,10 @@
 				&.top {
 					height: 90%;
 					width: 90%;
+				}
+
+				&.right {
+					text-align:center;
 				}
 
 				&.right {
