@@ -17,3 +17,9 @@ window.onload = (event) => {
 
 };
 
+
+
+function go(bookmark){
+    let url = location.href = `#${bookmark}`;
+    history.replaceState(url,'DT', url);   //Don't like hashes. Changing it back.
+}

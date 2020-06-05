@@ -196,3 +196,42 @@ body {
 
 	}
 }
+
+.tri-link {
+	animation-name: tri-blink;
+	animation-duration: 4s;
+	cursor: pointer;
+	display: inline-block;
+	background-color: purple;
+	width: 30px;
+	height: 30px;
+	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+	animation-iteration-count: infinite;
+
+	&:hover {
+		background-color: dodgerblue;
+	}
+
+	&.up {
+		animation-delay: -2s;
+		clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	}
+}
+
+@keyframes tri-blink {
+	0%   {
+		background-color: purple;
+	}
+	25%  {
+		background-color: dodgerblue;
+		@include opacity(.5);
+	}
+	50%  {
+		background-color: purple;
+		@include opacity(.8);
+	}
+	100% {
+		background-color: dodgerblue;
+		@include opacity(1);
+	}
+}
