@@ -15,6 +15,7 @@ window.onload = (event) => {
         }
     });
 
+    console.info('page loaded');
 };
 
 
